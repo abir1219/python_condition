@@ -1,13 +1,13 @@
 class Car:
-    def __init__(self,__brand,__model):
-        self.brand = __brand
-        self.model = __model
+    def __init__(self,brand,model):
+        self.__brand = brand
+        self.__model = model
 
     def get_model(self):
-        return self.model
+        return self.__model
 
     def fullName(self):
-        return f"{self.brand} - {self.model}"
+        return f"{self.__brand} - {self.__model}"
 
 
 tataCar = Car("Tata","Nexon")

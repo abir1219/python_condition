@@ -1,21 +1,21 @@
 class Car:
     __totalCar = 0
-    def __init__(self,__brand,__model):
-        self.brand = __brand
-        self.model = __model
+    def __init__(self,brand,model):
+        self.__brand = brand
+        self.__model = model
         self.__totalCar += 1
 
     def get_brand(self):
-        return self.brand
+        return self.__brand
     
     def get_total(self):
         return self.__totalCar
     
     def get_model(self):
-        return self.model
+        return self.__model
     
     def full_name(self):
-            return f"{self.brand} - {self.model}"
+            return f"{self.__brand} - {self.__model}"
         
 
 class TataCar(Car):
